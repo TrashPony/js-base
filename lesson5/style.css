@@ -1,0 +1,89 @@
+body {
+    background: #727272;
+}
+
+#root {
+    width: 450px;
+    margin: 50px auto;
+}
+
+.rowGrid {
+
+}
+
+.rowGrid:after {
+    display: block;
+    clear: both;
+    content: '';
+}
+
+.cellGrid, .cellGridNumberRow, .cellGridSymbolRow {
+    width: 50px;
+    height: 50px;
+    float: left;
+    text-align: center;
+    border: 1px solid rgba(218, 218, 218, 0.4);
+    color: #ff7800;
+    text-shadow: 0 -1px 1px #000000, 0 -1px 1px #000000, 0 1px 1px #000000, 0 1px 1px #000000, -1px 0 1px #000000, 1px 0 1px #000000, -1px 0 1px #000000, 1px 0 1px #000000, -1px -1px 1px #000000, 1px -1px 1px #000000, -1px 1px 1px #000000, 1px 1px 1px #000000, -1px -1px 1px #000000, 1px -1px 1px #000000, -1px 1px 1px #000000, 1px 1px 1px #000000;
+    box-shadow: inset 0 0 5px black;
+    background-color: #8cb3c7;
+}
+
+.cellGridNumberRow {
+    line-height: 50px;
+    width: 20px;
+}
+
+.cellGridSymbolRow {
+    height: 20px;
+}
+
+/* белые фигуры */
+.whitePawn {
+    background: url(./img/chess-sprite.png) 0 6px / 550% no-repeat;
+}
+
+.whiteHorse {
+    background: url(./img/chess-sprite.png) -43px 2px / 541% no-repeat;
+}
+
+.whiteOfficer {
+    background: url(./img/chess-sprite.png) -79px 1px / 495% no-repeat;
+}
+
+.whiteRook {
+    background: url(./img/chess-sprite.png) -120px 4px / 495% no-repeat;
+}
+
+.whiteQueen {
+    background: url(./img/chess-sprite.png) -162px 1px / 495% no-repeat;
+}
+
+.whiteKing {
+    background: url(./img/chess-sprite.png) -203px 1px / 495% no-repeat;
+}
+
+/* черные фигуры */
+.blackPawn {
+    background: url(./img/chess-sprite.png) 0 -57px / 550% no-repeat;
+}
+
+.blackHorse {
+    background: url(./img/chess-sprite.png) -43px -59px / 541% no-repeat;
+}
+
+.blackOfficer {
+    background: url(./img/chess-sprite.png) -79px -56px / 495% no-repeat;
+}
+
+.blackRook {
+    background: url(./img/chess-sprite.png) -120px -52px / 495% no-repeat;
+}
+
+.blackQueen {
+    background: url(./img/chess-sprite.png) -162px -57px / 495% no-repeat;
+}
+
+.blackKing {
+    background: url(./img/chess-sprite.png) -203px -56px / 495% no-repeat;
+}
