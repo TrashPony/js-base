@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Lesson4</title>
+    <script src="script.js"></script>
+    <script src="GoalKeeper.js"></script>
+    <script src="Millionaire.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div id="main">
+    <div id="job_1">
+        <h3> Задание 1</h3>
+        <div class="inputs">
+            <input id="job_1_a" type="number" title="a" placeholder="a"><br>
+            <input type="submit" onclick="job1()" value="Рассчитать">
+            <div class="result" style="margin-left: 10px">
+                <div id="job_1_res">
+                    <div id="units"></div>
+                    <div id="decades"></div>
+                    <div id="hundreds"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="job_2">
+        <h3> Задание 2</h3>
+        <div class="inputs">
+            <div style="width: 370px;padding: 5px;"> Выберите зону для атаки: topleft, top, topright, left, center,
+                right, bottomleft, bottom, bottomright.
+            </div>
+            <input id="job_2_a" type="text" title="sector" placeholder="sector" style="width: 120px">
+            <input type="submit" onclick="Game()" value="Атаковать">
+            <div class="result" style="margin-left: 10px">
+                <div id="job_2_res"></div>
+            </div>
+            <div style="float: left;padding: 5px;text-align: center">goalKeeper
+                <div id="goalKeeper" style="width: 100%; text-align: center">0</div>
+            </div>
+            <div style="float: left;padding: 5px;text-align: center">attacker
+                <div id="attacker" style="width: 100%; text-align: center">0</div>
+            </div>
+            <div style="float: right;margin-top: -80px; width: 120px;">
+                Фильтр:
+                <input oninput="filterLog()" id="logFilter" type="number" title="logFilter" placeholder="событие"
+                       style="width: 80px;">
+            </div>
+            <div id="log"></div>
+        </div>
+    </div>
+
+    <div id="job_3">
+        <h3> Задание 3</h3>
+        <div class="inputs" style="height: 180px;">
+            <div style="padding-left: 10px; height: 40px"> Вопрос: <span id="question"></span></div>
+            <div id="answers" style="height: 30px; margin-left: 20px; margin-top: 20px"></div>
+            <input style="text-transform: uppercase; width: 170px" id="job_3_a" type="text" title="answer"
+                   placeholder="Ответ A, B, C, D"><br>
+            <input id="AnswerInput" type="submit" onclick="Answer()" value="Начать игру!">
+
+            <div id="prize"></div>
+        </div>
+    </div>
+</div>
+</body>
+</html>
