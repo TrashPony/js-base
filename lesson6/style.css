@@ -1,0 +1,47 @@
+div.big {
+    width: 400px;
+    min-height: 200px;
+    border: 1px solid grey;
+    text-align: center;
+    margin: 0 auto;
+    position: relative;
+    user-select: none;
+}
+
+div.icons {
+    text-align: center;
+    width: 500px;
+    margin: 0 auto;
+}
+
+.arrow {
+    height: 25px;
+    width: 25px;
+    background: url("./img/arrow.png") center center / cover no-repeat;
+    transition: 0.2s;
+    opacity: 0.3;
+}
+
+.arrow:hover {
+    opacity: 0.8;
+}
+
+#arrowLeft {
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: rotate(180deg);
+}
+
+#arrowLeft:active {
+    transform: scale(0.9) rotate(180deg);
+}
+#arrowRight {
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.arrow:active {
+    transform: scale(0.9);
+}
