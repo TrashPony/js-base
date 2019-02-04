@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Lesson 6</title>
+    <link rel="stylesheet" href="style.css"/>
+    <script src="script.js"></script>
+    <script src="basket.js"></script>
+
+</head>
+
+<body>
+<!-- В этот момент функция myClick уже должна быть определена -->
+<div class="big" id="bigPicture" onclick="myClick()"></div>
+
+<div class="icons">
+    <img width="120" class="smallImg" data-big-src="img/big/1.jpeg" src="img/small/1.jpg"/>
+    <img width="120" class="smallImg" data-big-src="img/big/2.jpeg" src="img/small/2.jpg"/>
+    <img width="120" class="smallImg" data-big-src="img/big/3.jpg" src="img/small/3.jpg"/>
+</div>
+
+<div id="market">
+    <div id="items">
+        <div class="basketHead" style="width: 86px;">Товары</div>
+        <div class="items" onclick="AddItemToBasket(event, 25)" style="background: url('./img/items_12.png') 3px -7px / 550% no-repeat, rgba(63, 70, 74, 0.5);">
+            Sword - 25cr.
+        </div>
+        <div class="items" onclick="AddItemToBasket(event,10)" style="background: url('./img/items_12.png') -62px -7px / 550% no-repeat, rgba(63, 70, 74, 0.5);">
+            Staff - 10cr.
+        </div>
+        <div class="items" onclick="AddItemToBasket(event,20)" style="background: url('./img/items_12.png') -130px -7px / 550% no-repeat, rgba(63, 70, 74, 0.5);">
+            Axe - 20cr.
+        </div>
+        <div class="items" onclick="AddItemToBasket(event,15)" style="background: url('./img/items_12.png') -189px -7px / 550% no-repeat, rgba(63, 70, 74, 0.5);">
+            Bow  - 15cr.
+        </div>
+    </div>
+    <div id="basket">
+        <div class="basketHead">Корзина</div>
+        <div id="allPrice">Общая стоимость товаров: 0</div>
+        <div id="basketPool"></div>
+    </div>
+</div>
+
+</body>
+
+</html>
